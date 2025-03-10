@@ -1,0 +1,4 @@
+- STEP1 :
+    - magick image1.png image2.png -fx "(((255*u)&(255*(1-v)))|((255*(1-u))&(255*v)))/255" img_out.png
+- STEP2 :
+    - magick img_out.png -channel RGB -separate -background green -flatten flag.png
